@@ -8,18 +8,24 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
-  <body class="my-0 py-0 h-auto bg-gradient-to-tl from-cyan-300 via-fuchsia-300 to-white bg-no-repeat">
+
+  <body
+    class="my-0 xl:px-16 h-auto bg-gradient-to-tl from-cyan-300 via-fuchsia-300 to-white bg-no-repeat"
+  >
     <!-- Background Image -->
 
     <header>
       <!-- Navbar -->
-      <nav class="m-10 flex justify-between">
+      <nav
+        class="2xl:max-w-screen-2xl xl:px-0 px-12 my-10 flex justify-between mx-auto"
+      >
         <div class="">
           <a href="#">
             <img class="inline-block mr-1" src="QR.it.png" alt="" />
@@ -35,52 +41,87 @@
 
     <!-- Hero -->
     <section>
-        <div class="4 m-10 h-auto rounded-3xl backdrop-blur-md bg-white/30 shadow-md">
-            <div class="flex items-center justify-between">
-                <div class="self-start">
-                    <span class="block my-0 ml-10 mt-20 font-jakarta font-semibold text-5xl bg-clip-text text-transparent bg-gradient-to-r from-[#5d69a6] to-[#5c57b68b]">Generate you own</span>
-                    <span class="block ml-10 font-jakarta font-bold text-7xl bg-clip-text text-transparent bg-gradient-to-r from-[#5d69a6] to-[#5c57b68b]">QR Code</span>
-                    <span class="-translate-y-5 block mb-20 ml-10 font-jakarta font-extrabold text-[80px] bg-clip-text text-transparent bg-gradient-to-r from-[#5d69a6] to-[#5c57b68b]">In just a click.</span>
-                </div>
-                <img class="w-96 p-0" src="logo-qrit.png">
-              </div>
+      <div
+        class="xl:mx-auto lg:max-w-screen-2xl md:grid-cols-2 grid grid-cols-1 m-10 py-1 h-auto rounded-3xl backdrop-blur-md bg-white/30 shadow-md"
+      >
+        <div class="col-auto md:ml-10 md:mb-10 md:self-center">
+          <h1
+            class="lg:text-4xl md:text-left text-center my-0 mt-10 font-jakarta font-semibold text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#5d69a6] to-[#5c57b68b]"
+          >
+            Generate Your own
+          </h1>
+          <h1
+            class="lg:text-8xl md:text-left tracking-tighter text-center font-jakarta font-bold text-7xl bg-clip-text text-transparent bg-gradient-to-r from-[#5d69a6] to-[#5c57b68b]"
+          >
+            QR Code
+          </h1>
+          <h1
+            class="lg:text-[96px] md:mx-0 md:text-left mx-4 leading-none tracking-tighter text-center -translate-y-2 block font-jakarta font-black text-[80px] bg-clip-text text-transparent bg-gradient-to-r from-[#5d69a6] to-[#5c57b68b]"
+          >
+            <strong>In just a click.</strong>
+          </h1>
         </div>
-        <div class="form w-auto mx-16 justify-center relative translate-x-7 -translate-y-[70px]">
-            <input class= " shadow-md text-slate-500 focus:outline-none bg-white font-jakarta font-medium relative w-11/12 px-6 py-5 rounded-full active:border-sky-500 active:ring-sky-500" type="text" placeholder="type ur text or url here...">
-            <button class= "hover:bg-[#5B57B6] focus:border-purple-200 focus:ring-2 focus:ring-purple-200 bg-[#5B57B6] px-5 py-2 rounded-full absolute -translate-x-[130px] translate-y-3 text-white font-jakarta">Generate</button>
+        <div class="col-auto sm:flex sm:justify-center">
+          <img
+            class="xl:w-[36rem] md:w-[30rem] sm:w-96 mb-3"
+            src="logo-qrit.png"
+          />
         </div>
+      </div>
+      <div
+        class="xl:mx-auto lg:max-w-screen-2xl flex flex-col w-auto mx-16 relative translate-x-3 -translate-y-[70px] md:translate-x-6 lg:translate-x-8 xl:translate-x-14"
+      >
+        <input
+          class="shadow-md text-slate-500 focus:outline-none bg-white font-jakarta font-medium relative w-11/12 px-6 py-5 rounded-full"
+          type="text"
+          placeholder="type ur text or url here..."
+        />
+        <button
+          class="2xl:-translate-x-36 xl:-translate-x-[128px] lg:-translate-x-24 md:-translate-x-20 sm:self-end sm:absolute sm:-translate-x-16 sm:-translate-y-4 -translate-x-3 self-center hover:bg-[#4b479a] focus:border-purple-200 focus:ring-2 focus:ring-purple-200 bg-[#5B57B6] px-6 py-3 rounded-full text-white font-jakarta mt-6"
+        >
+          Generate
+        </button>
+      </div>
     </section>
 
     <!-- QR Generated -->
-    <section class="flex mx-auto justify-center items-baseline">
-        <div class="bg-white mx-10 -translate-y-5 w-96 h-auto rounded-3xl px-10 py-5 flex items-center justify-between shadow-lg items-center">
-            <div class="">
-                <span class="font-jakarta font-extrabold text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#5d69a6] to-[#5c57b68b]">Your QR Code is Ready</span>
-            </div>
-            <div>
-                <img class="w-96 translate-x-6" src="qr.png" alt="" srcset="">
-            </div>
+    <div class="grid grid-cols-1">
+      <div
+        class="xl:scale-150 xl:my-16 lg:scale-125 lg:my-12 md:scale-110 md:my-8 col-auto bg-white mx-auto -translate-y-5 w-96 h-auto rounded-3xl px-10 py-5 flex justify-between shadow-lg items-center"
+      >
+        <div class="">
+          <span
+            class="font-jakarta font-extrabold text-4xl bg-clip-text text-transparent bg-gradient-to-r from-[#5d69a6] to-[#5c57b68b]"
+            >Your QR Code is Ready</span
+          >
         </div>
         <div>
-            <button class= "hover:bg-[#5B57B6] focus:border-purple-200 focus:ring-2 focus:ring-purple-200 bg-[#5B57B6] px-6 py-3 rounded-full text-white font-jakarta translate-y-2">Download</button>
+          <img class="w-96 translate-x-6" src="qr.png" alt="" srcset="" />
         </div>
-    </section>
+      </div>
+      <div class="col-auto text-center sm:mx-auto">
+        <button
+          class="mb-16 hover:bg-[#4b479a] focus:border-purple-200 focus:ring-2 focus:ring-purple-200 bg-[#5B57B6] px-6 py-3 rounded-full text-white font-jakarta translate-y-2"
+        >
+          Download
+        </button>
+      </div>
+    </div>
 
     <footer>
-        <div class="bg-white">
-            <div class="p-10">
-                <div class="">
-                    <h3>About</h3>
-                </div>
-                <div class="">
-                    <h3>Tools & API</h3>
-                </div>
-                <div class="">
-                    <h3>Contact Us</h3>
-                </div>
-            </div>
+      <div class="bg-white">
+        <div class="p-10">
+          <div class="">
+            <h3>About</h3>
+          </div>
+          <div class="">
+            <h3>Tools & API</h3>
+          </div>
+          <div class="">
+            <h3>Contact Us</h3>
+          </div>
         </div>
+      </div>
     </footer>
-
   </body>
 </html>
